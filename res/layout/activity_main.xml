@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed"
+    tools:context="com.a1ubkh4n.helpingbirdsofdiit.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginStart="@dimen/marginleft"
+        android:layout_marginRight="@dimen/marginright"
+        android:layout_marginEnd="@dimen/marginright"
+        android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="একটু সাহস একটু সদিচ্ছা এক ব্যাগ রক্তে বেঁচে থাকুক মানবসত্ত্বা"
+            android:textColor="#ae2b2b"
+            android:textSize="23sp" />
+
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_preface"
+                android:drawableStart="@drawable/ic_preface"
+                android:onClick="btnPreface"
+                android:text="  Preface" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/styleforeachbutton">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_admin"
+                android:drawableStart="@drawable/ic_admin"
+                android:onClick="btnpanel"
+                android:text="  admin Panel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/styleforeachbutton">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_team"
+                android:drawableStart="@drawable/ic_team"
+                android:onClick="btnMem"
+                android:text="  Member" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/styleforeachbutton">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_emergency"
+                android:drawableStart="@drawable/ic_emergency"
+                android:onClick="btnemergency"
+                android:text="  Emergency contact" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/styleforeachbutton">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_info"
+                android:drawableStart="@drawable/ic_info"
+                android:onClick="btnRelevant"
+                android:text="  Information about Donation" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/styleforeachbutton">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_about"
+                android:drawableStart="@drawable/ic_about"
+                android:onClick="btnabout"
+                android:text="  About" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_relevant_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed"
+    tools:context="com.a1ubkh4n.helpingbirdsofdiit.relevant_info">
+
+    <include
+        android:id="@+id/toolrelevant"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolrelevant"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_marginStart="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginright"
+            android:layout_marginEnd="@dimen/marginright"
+            android:layout_marginTop="@dimen/margintop"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margintop"
+                android:text="@string/theme" />
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btnredcell"
+                    android:text="@string/blood_groups_and_red_cell_compatibility" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btnAdvan"
+                    android:text="@string/advantage_of_donation" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btneligible"
+                    android:text="@string/who_is_not_eligible_to_donate_blood" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btnBefore"
+                    android:text="@string/before_your_donation" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btnDuring"
+                    android:text="@string/during_your_donation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleforeachbutton">
+
+                <Button
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_give_blood"
+                    android:drawableStart="@drawable/ic_give_blood"
+                    android:onClick="btnAfter"
+                    android:text="@string/after_your_donation" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewrelevant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

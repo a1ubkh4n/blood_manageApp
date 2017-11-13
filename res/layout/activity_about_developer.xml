@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_developer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed"
+    tools:context="com.a1ubkh4n.helpingbirdsofdiit.about_developer">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tooldev"/>
+
+    <ScrollView
+
+        android:layout_below="@id/tooldev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_laptop" />
+
+
+            <TextView
+                android:drawableBottom="@drawable/ic_facebook"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="05dp"
+                android:onClick="btnAyub"
+                android:text="@string/md_ayub_khan"
+                android:textAlignment="center"
+                android:textColor="#1e0d8f"
+                android:textSize="22sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/ayub1698_diit_info_n16th_batch_cse"
+                android:textAlignment="center"
+                android:textColor="#1e0d8f"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_binary" />
+
+
+                <TextView
+                    android:drawableBottom="@drawable/ic_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingTop="05dp"
+                    android:text="@string/nisharul_islam_nahid"
+                    android:textAlignment="center"
+                    android:textColor="#1e0d8f"
+                    android:textSize="22sp"
+                    android:textStyle="italic|bold"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/nisharul1640_diit_info_n16th_batch_cse"
+                    android:textAlignment="center"
+                    android:textColor="#1e0d8f"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

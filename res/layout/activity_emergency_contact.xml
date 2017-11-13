@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emergency_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed"
+    tools:context="com.a1ubkh4n.helpingbirdsofdiit.emergency_contact">
+
+    <include
+        android:id="@+id/toolemer"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolemer"
+        android:layout_marginBottom="@dimen/margin_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="05dp"
+                android:text="@string/quote_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/saiful_for_emer" />
+
+                <TextView
+                    android:id="@+id/idsaiful"
+                    style="@style/quotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/saiful_islam_shanto"
+                    android:textColor="#580909"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/phonesaiful"
+                        style="@style/quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="02dp"
+                        android:background="#eeefed"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:onClick="btncallsaiful"
+                        android:text="@string/_01913833994" />
+
+                    <TextView
+                        style="@style/quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#eeefed"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawableStart="@drawable/ic_email"
+                        android:gravity="center"
+                        android:onClick="btnmailsaiful"
+                        android:text="E-Mail"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/touhid_for_emer" />
+
+                    <TextView
+                        android:id="@+id/idtouhidur"
+                        style="@style/quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/touhidur_rahman"
+                        android:textColor="#580909"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageView2"
+                            style="@style/quotes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#eeefed"
+                            android:textSize="20sp"
+                            android:drawableLeft="@drawable/ic_telephone"
+                            android:drawableStart="@drawable/ic_telephone"
+                            android:gravity="center"
+                            android:onClick="btncalltouhid"
+                            android:text="@string/_01935698485" />
+
+                        <TextView
+                            style="@style/quotes"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#eeefed"
+                            android:drawableLeft="@drawable/ic_email"
+                            android:drawableStart="@drawable/ic_email"
+                            android:gravity="center"
+                            android:onClick="btnmailtouhid"
+                            android:text="E-Mail" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/shanta_for_emer" />
+
+                    <TextView
+                        android:id="@+id/idshanta"
+                        style="@style/quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/taslima_akter_shanta"
+                        android:textColor="#580909"
+                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                    <TextView
+                        style="@style/quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#eeefed"
+                        android:gravity="center"
+                        android:onClick="btncallshanta"
+                        android:textSize="20sp"
+                        android:text="E-Mail"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawableStart="@drawable/ic_email"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                style="@style/quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/more_contacts"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="05dp"
+                android:textColor="#580909"
+                android:textSize="22sp"/>
+
+            <TextView
+                style="@style/quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mehedi- +8801724974497"
+                android:layout_marginTop="02dp"
+                android:textColor="#580909"
+                android:textSize="18sp"/>
+            <TextView
+                style="@style/quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Parvez- +8801994959287"
+                android:layout_marginTop="02dp"
+                android:textColor="#580909"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewemer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id2" />
+</RelativeLayout>

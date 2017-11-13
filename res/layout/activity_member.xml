@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_member"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed"
+    tools:context="com.a1ubkh4n.helpingbirdsofdiit.member">
+
+    <include
+        android:id="@+id/toolmember"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolmember"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginStart="@dimen/marginleft"
+        android:layout_marginRight="@dimen/marginright"
+        android:layout_marginEnd="@dimen/marginright"
+        android:layout_marginBottom="@dimen/margin_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/margintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/quotes"
+            android:layout_marginBottom="@dimen/margintop"
+            android:text="@string/quote_3" />
+
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_a_positive"
+                android:drawableStart="@drawable/ic_a_positive"
+                android:onClick="btnApos"
+                android:text="@string/a_positive_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_a_negative"
+                android:drawableStart="@drawable/ic_a_negative"
+                android:onClick="btnAneg"
+                android:text="@string/a_negative_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_b_positive"
+                android:drawableStart="@drawable/ic_b_positive"
+                android:onClick="btnBpos"
+                android:text="@string/b_positive_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_b_negative"
+                android:drawableStart="@drawable/ic_b_negative"
+                android:onClick="btnBneg"
+                android:text="@string/b_negative_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_o_positive"
+                android:drawableStart="@drawable/ic_o_positive"
+                android:onClick="btnOpos"
+                android:text="@string/o_positive_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_o_negative"
+                android:drawableStart="@drawable/ic_o_negative"
+                android:onClick="btnOneg"
+                android:text="@string/o_negative_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_ab_positive"
+                android:drawableStart="@drawable/ic_ab_positive"
+                android:onClick="btnABpos"
+                android:text="@string/ab_positive_donor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleforeachbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_ab_negative"
+                android:drawableStart="@drawable/ic_ab_negative"
+                android:onClick="btnABneg"
+                android:text="@string/ab_negative_donor" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id2" />
+</RelativeLayout>

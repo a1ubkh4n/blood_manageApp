@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefed">
+
+    <!-- it is used for reveal effect -->
+    <View
+        android:id="@+id/backgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d9dad8"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginRight="05dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:text="@string/bismillah"
+        android:textAlignment="center"
+        android:textColor="#b40d34"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/theme"
+        android:gravity="center"
+        android:textColor="#930920"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:contentDescription="@string/blood"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_splash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginRight="05dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/a_voluntary_activity_of_blood_donation"
+        android:textAlignment="center"
+        android:textColor="#b40d34"
+        android:textSize="23sp" />
+
+
+
+</RelativeLayout>
